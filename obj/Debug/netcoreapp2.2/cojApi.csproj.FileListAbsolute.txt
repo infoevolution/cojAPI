@@ -1,0 +1,133 @@
+/Volumes/Extreme SSD/Dev/coj/cojApi/bin/Debug/netcoreapp2.2/cojApi.deps.json
+/Volumes/Extreme SSD/Dev/coj/cojApi/bin/Debug/netcoreapp2.2/cojApi.runtimeconfig.json
+/Volumes/Extreme SSD/Dev/coj/cojApi/bin/Debug/netcoreapp2.2/cojApi.runtimeconfig.dev.json
+/Volumes/Extreme SSD/Dev/coj/cojApi/bin/Debug/netcoreapp2.2/cojApi.dll
+/Volumes/Extreme SSD/Dev/coj/cojApi/bin/Debug/netcoreapp2.2/cojApi.pdb
+/Volumes/Extreme SSD/Dev/coj/cojApi/obj/Debug/netcoreapp2.2/cojApi.csprojAssemblyReference.cache
+/Volumes/Extreme SSD/Dev/coj/cojApi/obj/Debug/netcoreapp2.2/cojApi.csproj.CoreCompileInputs.cache
+/Volumes/Extreme SSD/Dev/coj/cojApi/obj/Debug/netcoreapp2.2/cojApi.RazorAssemblyInfo.cache
+/Volumes/Extreme SSD/Dev/coj/cojApi/obj/Debug/netcoreapp2.2/cojApi.RazorAssemblyInfo.cs
+/Volumes/Extreme SSD/Dev/coj/cojApi/obj/Debug/netcoreapp2.2/cojApi.AssemblyInfoInputs.cache
+/Volumes/Extreme SSD/Dev/coj/cojApi/obj/Debug/netcoreapp2.2/cojApi.AssemblyInfo.cs
+/Volumes/Extreme SSD/Dev/coj/cojApi/obj/Debug/netcoreapp2.2/cojApi.RazorTargetAssemblyInfo.cache
+/Volumes/Extreme SSD/Dev/coj/cojApi/obj/Debug/netcoreapp2.2/cojApi.dll
+/Volumes/Extreme SSD/Dev/coj/cojApi/obj/Debug/netcoreapp2.2/cojApi.pdb
+/Users/ievodev/Desktop/coj/dev/coj/cojApi/bin/Debug/netcoreapp2.2/cojApi.deps.json
+/Users/ievodev/Desktop/coj/dev/coj/cojApi/bin/Debug/netcoreapp2.2/cojApi.runtimeconfig.json
+/Users/ievodev/Desktop/coj/dev/coj/cojApi/bin/Debug/netcoreapp2.2/cojApi.runtimeconfig.dev.json
+/Users/ievodev/Desktop/coj/dev/coj/cojApi/bin/Debug/netcoreapp2.2/cojApi.dll
+/Users/ievodev/Desktop/coj/dev/coj/cojApi/bin/Debug/netcoreapp2.2/cojApi.pdb
+/Users/ievodev/Desktop/coj/dev/coj/cojApi/obj/Debug/netcoreapp2.2/cojApi.csprojAssemblyReference.cache
+/Users/ievodev/Desktop/coj/dev/coj/cojApi/obj/Debug/netcoreapp2.2/cojApi.csproj.CoreCompileInputs.cache
+/Users/ievodev/Desktop/coj/dev/coj/cojApi/obj/Debug/netcoreapp2.2/cojApi.RazorAssemblyInfo.cache
+/Users/ievodev/Desktop/coj/dev/coj/cojApi/obj/Debug/netcoreapp2.2/cojApi.RazorAssemblyInfo.cs
+/Users/ievodev/Desktop/coj/dev/coj/cojApi/obj/Debug/netcoreapp2.2/cojApi.AssemblyInfoInputs.cache
+/Users/ievodev/Desktop/coj/dev/coj/cojApi/obj/Debug/netcoreapp2.2/cojApi.AssemblyInfo.cs
+/Users/ievodev/Desktop/coj/dev/coj/cojApi/obj/Debug/netcoreapp2.2/cojApi.RazorTargetAssemblyInfo.cache
+/Users/ievodev/Desktop/coj/dev/coj/cojApi/obj/Debug/netcoreapp2.2/cojApi.dll
+/Users/ievodev/Desktop/coj/dev/coj/cojApi/obj/Debug/netcoreapp2.2/cojApi.pdb
+/Users/ievodev/Desktop/coj/dev/coj/cojApi/cojapi_publish/cojApi.deps.json
+/Users/ievodev/Desktop/coj/dev/coj/cojApi/cojapi_publish/cojApi.runtimeconfig.json
+/Users/ievodev/Desktop/coj/dev/coj/cojApi/cojapi_publish/cojApi.runtimeconfig.dev.json
+/Users/ievodev/Desktop/coj/dev/coj/cojApi/cojapi_publish/cojApi.dll
+/Users/ievodev/Desktop/coj/dev/coj/cojApi/cojapi_publish/cojApi.pdb
+/Users/ievodev/Desktop/cojPv/cojApi/bin/Debug/netcoreapp2.2/cojApi.deps.json
+/Users/ievodev/Desktop/cojPv/cojApi/bin/Debug/netcoreapp2.2/cojApi.runtimeconfig.json
+/Users/ievodev/Desktop/cojPv/cojApi/bin/Debug/netcoreapp2.2/cojApi.runtimeconfig.dev.json
+/Users/ievodev/Desktop/cojPv/cojApi/bin/Debug/netcoreapp2.2/cojApi.dll
+/Users/ievodev/Desktop/cojPv/cojApi/bin/Debug/netcoreapp2.2/cojApi.pdb
+/Users/ievodev/Desktop/cojPv/cojApi/obj/Debug/netcoreapp2.2/cojApi.csprojAssemblyReference.cache
+/Users/ievodev/Desktop/cojPv/cojApi/obj/Debug/netcoreapp2.2/cojApi.csproj.CoreCompileInputs.cache
+/Users/ievodev/Desktop/cojPv/cojApi/obj/Debug/netcoreapp2.2/cojApi.RazorAssemblyInfo.cache
+/Users/ievodev/Desktop/cojPv/cojApi/obj/Debug/netcoreapp2.2/cojApi.RazorAssemblyInfo.cs
+/Users/ievodev/Desktop/cojPv/cojApi/obj/Debug/netcoreapp2.2/cojApi.AssemblyInfoInputs.cache
+/Users/ievodev/Desktop/cojPv/cojApi/obj/Debug/netcoreapp2.2/cojApi.AssemblyInfo.cs
+/Users/ievodev/Desktop/cojPv/cojApi/obj/Debug/netcoreapp2.2/cojApi.RazorTargetAssemblyInfo.cache
+/Users/ievodev/Desktop/cojPv/cojApi/obj/Debug/netcoreapp2.2/cojApi.dll
+/Users/ievodev/Desktop/cojPv/cojApi/obj/Debug/netcoreapp2.2/cojApi.pdb
+/Users/pv/Vol1/สำนักงานศาล/Dev/cojbpr/dev/codeChange/cojApi/bin/Debug/netcoreapp2.2/cojApi.deps.json
+/Users/pv/Vol1/สำนักงานศาล/Dev/cojbpr/dev/codeChange/cojApi/bin/Debug/netcoreapp2.2/cojApi.runtimeconfig.json
+/Users/pv/Vol1/สำนักงานศาล/Dev/cojbpr/dev/codeChange/cojApi/bin/Debug/netcoreapp2.2/cojApi.runtimeconfig.dev.json
+/Users/pv/Vol1/สำนักงานศาล/Dev/cojbpr/dev/codeChange/cojApi/bin/Debug/netcoreapp2.2/cojApi.dll
+/Users/pv/Vol1/สำนักงานศาล/Dev/cojbpr/dev/codeChange/cojApi/bin/Debug/netcoreapp2.2/cojApi.pdb
+/Users/pv/Vol1/สำนักงานศาล/Dev/cojbpr/dev/codeChange/cojApi/obj/Debug/netcoreapp2.2/cojApi.csprojAssemblyReference.cache
+/Users/pv/Vol1/สำนักงานศาล/Dev/cojbpr/dev/codeChange/cojApi/obj/Debug/netcoreapp2.2/cojApi.csproj.CoreCompileInputs.cache
+/Users/pv/Vol1/สำนักงานศาล/Dev/cojbpr/dev/codeChange/cojApi/obj/Debug/netcoreapp2.2/cojApi.RazorAssemblyInfo.cache
+/Users/pv/Vol1/สำนักงานศาล/Dev/cojbpr/dev/codeChange/cojApi/obj/Debug/netcoreapp2.2/cojApi.RazorAssemblyInfo.cs
+/Users/pv/Vol1/สำนักงานศาล/Dev/cojbpr/dev/codeChange/cojApi/obj/Debug/netcoreapp2.2/cojApi.AssemblyInfoInputs.cache
+/Users/pv/Vol1/สำนักงานศาล/Dev/cojbpr/dev/codeChange/cojApi/obj/Debug/netcoreapp2.2/cojApi.AssemblyInfo.cs
+/Users/pv/Vol1/สำนักงานศาล/Dev/cojbpr/dev/codeChange/cojApi/obj/Debug/netcoreapp2.2/cojApi.RazorTargetAssemblyInfo.cache
+/Users/pv/Vol1/สำนักงานศาล/Dev/cojbpr/dev/codeChange/cojApi/obj/Debug/netcoreapp2.2/cojApi.dll
+/Users/pv/Vol1/สำนักงานศาล/Dev/cojbpr/dev/codeChange/cojApi/obj/Debug/netcoreapp2.2/cojApi.pdb
+/Users/pv/Vol1/สำนักงานศาล/Dev/cojbpr/dev/codeChange/TS/cojApi/bin/Debug/netcoreapp2.2/coj_test/web.config
+/Users/pv/Vol1/สำนักงานศาล/Dev/cojbpr/dev/codeChange/TS/cojApi/bin/Debug/netcoreapp2.2/appsettings.Development.json
+/Users/pv/Vol1/สำนักงานศาล/Dev/cojbpr/dev/codeChange/TS/cojApi/bin/Debug/netcoreapp2.2/appsettings.json
+/Users/pv/Vol1/สำนักงานศาล/Dev/cojbpr/dev/codeChange/TS/cojApi/bin/Debug/netcoreapp2.2/coj_test/appsettings.Development.json
+/Users/pv/Vol1/สำนักงานศาล/Dev/cojbpr/dev/codeChange/TS/cojApi/bin/Debug/netcoreapp2.2/coj_test/appsettings.json
+/Users/pv/Vol1/สำนักงานศาล/Dev/cojbpr/dev/codeChange/TS/cojApi/bin/Debug/netcoreapp2.2/coj_test/cojApi.deps.json
+/Users/pv/Vol1/สำนักงานศาล/Dev/cojbpr/dev/codeChange/TS/cojApi/bin/Debug/netcoreapp2.2/coj_test/cojApi.runtimeconfig.json
+/Users/pv/Vol1/สำนักงานศาล/Dev/cojbpr/dev/codeChange/TS/cojApi/bin/Debug/netcoreapp2.2/Properties/launchSettings.json
+/Users/pv/Vol1/สำนักงานศาล/Dev/cojbpr/dev/codeChange/TS/cojApi/bin/Debug/netcoreapp2.2/cojApi.deps.json
+/Users/pv/Vol1/สำนักงานศาล/Dev/cojbpr/dev/codeChange/TS/cojApi/bin/Debug/netcoreapp2.2/cojApi.runtimeconfig.json
+/Users/pv/Vol1/สำนักงานศาล/Dev/cojbpr/dev/codeChange/TS/cojApi/bin/Debug/netcoreapp2.2/cojApi.runtimeconfig.dev.json
+/Users/pv/Vol1/สำนักงานศาล/Dev/cojbpr/dev/codeChange/TS/cojApi/bin/Debug/netcoreapp2.2/cojApi.dll
+/Users/pv/Vol1/สำนักงานศาล/Dev/cojbpr/dev/codeChange/TS/cojApi/bin/Debug/netcoreapp2.2/cojApi.pdb
+/Users/pv/Vol1/สำนักงานศาล/Dev/cojbpr/dev/codeChange/TS/cojApi/obj/Debug/netcoreapp2.2/cojApi.csprojAssemblyReference.cache
+/Users/pv/Vol1/สำนักงานศาล/Dev/cojbpr/dev/codeChange/TS/cojApi/obj/Debug/netcoreapp2.2/cojApi.RazorAssemblyInfo.cache
+/Users/pv/Vol1/สำนักงานศาล/Dev/cojbpr/dev/codeChange/TS/cojApi/obj/Debug/netcoreapp2.2/cojApi.RazorAssemblyInfo.cs
+/Users/pv/Vol1/สำนักงานศาล/Dev/cojbpr/dev/codeChange/TS/cojApi/obj/Debug/netcoreapp2.2/cojApi.AssemblyInfoInputs.cache
+/Users/pv/Vol1/สำนักงานศาล/Dev/cojbpr/dev/codeChange/TS/cojApi/obj/Debug/netcoreapp2.2/cojApi.AssemblyInfo.cs
+/Users/pv/Vol1/สำนักงานศาล/Dev/cojbpr/dev/codeChange/TS/cojApi/obj/Debug/netcoreapp2.2/cojApi.RazorTargetAssemblyInfo.cache
+/Users/pv/Vol1/สำนักงานศาล/Dev/cojbpr/dev/codeChange/TS/cojApi/obj/Debug/netcoreapp2.2/cojApi.dll
+/Users/pv/Vol1/สำนักงานศาล/Dev/cojbpr/dev/codeChange/TS/cojApi/obj/Debug/netcoreapp2.2/cojApi.pdb
+E:/work/Project/App/Court/COJ/PV/cojApi/bin/Debug/netcoreapp2.2/cojApi.deps.json
+E:/work/Project/App/Court/COJ/PV/cojApi/bin/Debug/netcoreapp2.2/cojApi.runtimeconfig.json
+E:/work/Project/App/Court/COJ/PV/cojApi/bin/Debug/netcoreapp2.2/cojApi.runtimeconfig.dev.json
+E:/work/Project/App/Court/COJ/PV/cojApi/bin/Debug/netcoreapp2.2/cojApi.dll
+E:/work/Project/App/Court/COJ/PV/cojApi/bin/Debug/netcoreapp2.2/cojApi.pdb
+E:/work/Project/App/Court/COJ/PV/cojApi/obj/Debug/netcoreapp2.2/cojApi.csprojAssemblyReference.cache
+E:/work/Project/App/Court/COJ/PV/cojApi/obj/Debug/netcoreapp2.2/cojApi.csproj.CoreCompileInputs.cache
+E:/work/Project/App/Court/COJ/PV/cojApi/obj/Debug/netcoreapp2.2/cojApi.RazorAssemblyInfo.cache
+E:/work/Project/App/Court/COJ/PV/cojApi/obj/Debug/netcoreapp2.2/cojApi.RazorAssemblyInfo.cs
+E:/work/Project/App/Court/COJ/PV/cojApi/obj/Debug/netcoreapp2.2/cojApi.AssemblyInfoInputs.cache
+E:/work/Project/App/Court/COJ/PV/cojApi/obj/Debug/netcoreapp2.2/cojApi.AssemblyInfo.cs
+E:/work/Project/App/Court/COJ/PV/cojApi/obj/Debug/netcoreapp2.2/cojApi.RazorTargetAssemblyInfo.cache
+E:/work/Project/App/Court/COJ/PV/cojApi/obj/Debug/netcoreapp2.2/cojApi.dll
+E:/work/Project/App/Court/COJ/PV/cojApi/obj/Debug/netcoreapp2.2/cojApi.pdb
+E:/work/Project/App/Court/COJ/PV/merce/cojApi_trigger/bin/Debug/netcoreapp2.2/cojApi.deps.json
+E:/work/Project/App/Court/COJ/PV/merce/cojApi_trigger/bin/Debug/netcoreapp2.2/cojApi.runtimeconfig.json
+E:/work/Project/App/Court/COJ/PV/merce/cojApi_trigger/bin/Debug/netcoreapp2.2/cojApi.runtimeconfig.dev.json
+E:/work/Project/App/Court/COJ/PV/merce/cojApi_trigger/bin/Debug/netcoreapp2.2/cojApi.dll
+E:/work/Project/App/Court/COJ/PV/merce/cojApi_trigger/bin/Debug/netcoreapp2.2/cojApi.pdb
+E:/work/Project/App/Court/COJ/PV/merce/cojApi_trigger/obj/Debug/netcoreapp2.2/cojApi.csprojAssemblyReference.cache
+E:/work/Project/App/Court/COJ/PV/merce/cojApi_trigger/obj/Debug/netcoreapp2.2/cojApi.csproj.CoreCompileInputs.cache
+E:/work/Project/App/Court/COJ/PV/merce/cojApi_trigger/obj/Debug/netcoreapp2.2/cojApi.RazorAssemblyInfo.cache
+E:/work/Project/App/Court/COJ/PV/merce/cojApi_trigger/obj/Debug/netcoreapp2.2/cojApi.RazorAssemblyInfo.cs
+E:/work/Project/App/Court/COJ/PV/merce/cojApi_trigger/obj/Debug/netcoreapp2.2/cojApi.AssemblyInfoInputs.cache
+E:/work/Project/App/Court/COJ/PV/merce/cojApi_trigger/obj/Debug/netcoreapp2.2/cojApi.AssemblyInfo.cs
+E:/work/Project/App/Court/COJ/PV/merce/cojApi_trigger/obj/Debug/netcoreapp2.2/cojApi.RazorTargetAssemblyInfo.cache
+E:/work/Project/App/Court/COJ/PV/merce/cojApi_trigger/obj/Debug/netcoreapp2.2/cojApi.dll
+E:/work/Project/App/Court/COJ/PV/merce/cojApi_trigger/obj/Debug/netcoreapp2.2/cojApi.pdb
+/Users/pv/Vol1/สำนักงานศาล/Dev/cojbpr/dev/codeChange/cojApi_trigger/bin/Debug/netcoreapp2.2/appsettings.Development.json
+/Users/pv/Vol1/สำนักงานศาล/Dev/cojbpr/dev/codeChange/cojApi_trigger/bin/Debug/netcoreapp2.2/Properties/launchSettings.json
+/Users/pv/Vol1/สำนักงานศาล/Dev/cojbpr/dev/codeChange/cojApi_trigger/bin/Debug/netcoreapp2.2/appsettings.json
+/Users/pv/Vol1/สำนักงานศาล/Dev/cojbpr/dev/codeChange/cojApi_trigger/bin/Debug/netcoreapp2.2/package-lock.json
+/Users/pv/Vol1/สำนักงานศาล/Dev/cojbpr/dev/codeChange/cojApi_trigger/bin/Debug/netcoreapp2.2/cojApi.deps.json
+/Users/pv/Vol1/สำนักงานศาล/Dev/cojbpr/dev/codeChange/cojApi_trigger/bin/Debug/netcoreapp2.2/cojApi.runtimeconfig.json
+/Users/pv/Vol1/สำนักงานศาล/Dev/cojbpr/dev/codeChange/cojApi_trigger/bin/Debug/netcoreapp2.2/cojApi.runtimeconfig.dev.json
+/Users/pv/Vol1/สำนักงานศาล/Dev/cojbpr/dev/codeChange/cojApi_trigger/bin/Debug/netcoreapp2.2/cojApi.dll
+/Users/pv/Vol1/สำนักงานศาล/Dev/cojbpr/dev/codeChange/cojApi_trigger/bin/Debug/netcoreapp2.2/cojApi.pdb
+/Users/pv/Vol1/สำนักงานศาล/Dev/cojbpr/dev/codeChange/cojApi_trigger/obj/Debug/netcoreapp2.2/cojApi.csprojAssemblyReference.cache
+/Users/pv/Vol1/สำนักงานศาล/Dev/cojbpr/dev/codeChange/cojApi_trigger/obj/Debug/netcoreapp2.2/cojApi.RazorAssemblyInfo.cache
+/Users/pv/Vol1/สำนักงานศาล/Dev/cojbpr/dev/codeChange/cojApi_trigger/obj/Debug/netcoreapp2.2/cojApi.RazorAssemblyInfo.cs
+/Users/pv/Vol1/สำนักงานศาล/Dev/cojbpr/dev/codeChange/cojApi_trigger/obj/Debug/netcoreapp2.2/cojApi.AssemblyInfoInputs.cache
+/Users/pv/Vol1/สำนักงานศาล/Dev/cojbpr/dev/codeChange/cojApi_trigger/obj/Debug/netcoreapp2.2/cojApi.AssemblyInfo.cs
+/Users/pv/Vol1/สำนักงานศาล/Dev/cojbpr/dev/codeChange/cojApi_trigger/obj/Debug/netcoreapp2.2/cojApi.RazorTargetAssemblyInfo.cache
+/Users/pv/Vol1/สำนักงานศาล/Dev/cojbpr/dev/codeChange/cojApi_trigger/obj/Debug/netcoreapp2.2/cojApi.dll
+/Users/pv/Vol1/สำนักงานศาล/Dev/cojbpr/dev/codeChange/cojApi_trigger/obj/Debug/netcoreapp2.2/cojApi.pdb
+/Users/pv/Vol1/สำนักงานศาล/Dev/cojbpr/dev/codeChange/cojApi_trigger/bin/Debug/netcoreapp2.2/cojApiDev/web.config
+/Users/pv/Vol1/สำนักงานศาล/Dev/cojbpr/dev/codeChange/cojApi_trigger/bin/Debug/netcoreapp2.2/cojApiDev/appsettings.Development.json
+/Users/pv/Vol1/สำนักงานศาล/Dev/cojbpr/dev/codeChange/cojApi_trigger/bin/Debug/netcoreapp2.2/cojApiDev/appsettings.json
+/Users/pv/Vol1/สำนักงานศาล/Dev/cojbpr/dev/codeChange/cojApi_trigger/bin/Debug/netcoreapp2.2/cojApiDev/cojApi.deps.json
+/Users/pv/Vol1/สำนักงานศาล/Dev/cojbpr/dev/codeChange/cojApi_trigger/bin/Debug/netcoreapp2.2/cojApiDev/cojApi.runtimeconfig.json
+/Users/pv/Vol1/สำนักงานศาล/Dev/cojbpr/dev/codeChange/cojApi_trigger/bin/Debug/netcoreapp2.2/cojApiDev/package-lock.json
