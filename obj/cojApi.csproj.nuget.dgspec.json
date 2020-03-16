@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/pv/Vol1/สำนักงานศาล/Dev/cojbpr/dev/codeChange/cojApi_trigger/cojApi.csproj": {}
+    "/Users/pv/Documents/GitHub/cojAPI/cojApi.csproj": {}
   },
   "projects": {
-    "/Users/pv/Vol1/สำนักงานศาล/Dev/cojbpr/dev/codeChange/cojApi_trigger/cojApi.csproj": {
+    "/Users/pv/Documents/GitHub/cojAPI/cojApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/pv/Vol1/สำนักงานศาล/Dev/cojbpr/dev/codeChange/cojApi_trigger/cojApi.csproj",
+        "projectUniqueName": "/Users/pv/Documents/GitHub/cojAPI/cojApi.csproj",
         "projectName": "cojApi",
-        "projectPath": "/Users/pv/Vol1/สำนักงานศาล/Dev/cojbpr/dev/codeChange/cojApi_trigger/cojApi.csproj",
+        "projectPath": "/Users/pv/Documents/GitHub/cojAPI/cojApi.csproj",
         "packagesPath": "/Users/pv/.nuget/packages/",
-        "outputPath": "/Users/pv/Vol1/สำนักงานศาล/Dev/cojbpr/dev/codeChange/cojApi_trigger/obj/",
+        "outputPath": "/Users/pv/Documents/GitHub/cojAPI/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
