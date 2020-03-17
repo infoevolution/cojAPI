@@ -131,14 +131,8 @@ E:/work/Project/App/Court/COJ/PV/merce/cojApi_trigger/obj/Debug/netcoreapp2.2/co
 /Users/pv/Vol1/สำนักงานศาล/Dev/cojbpr/dev/codeChange/cojApi_trigger/bin/Debug/netcoreapp2.2/cojApiDev/cojApi.deps.json
 /Users/pv/Vol1/สำนักงานศาล/Dev/cojbpr/dev/codeChange/cojApi_trigger/bin/Debug/netcoreapp2.2/cojApiDev/cojApi.runtimeconfig.json
 /Users/pv/Vol1/สำนักงานศาล/Dev/cojbpr/dev/codeChange/cojApi_trigger/bin/Debug/netcoreapp2.2/cojApiDev/package-lock.json
-/Users/pv/Documents/GitHub/cojAPI/bin/Debug/netcoreapp2.2/cojApiDev/web.config
 /Users/pv/Documents/GitHub/cojAPI/bin/Debug/netcoreapp2.2/appsettings.Development.json
 /Users/pv/Documents/GitHub/cojAPI/bin/Debug/netcoreapp2.2/appsettings.json
-/Users/pv/Documents/GitHub/cojAPI/bin/Debug/netcoreapp2.2/cojApiDev/appsettings.Development.json
-/Users/pv/Documents/GitHub/cojAPI/bin/Debug/netcoreapp2.2/cojApiDev/appsettings.json
-/Users/pv/Documents/GitHub/cojAPI/bin/Debug/netcoreapp2.2/cojApiDev/cojApi.deps.json
-/Users/pv/Documents/GitHub/cojAPI/bin/Debug/netcoreapp2.2/cojApiDev/cojApi.runtimeconfig.json
-/Users/pv/Documents/GitHub/cojAPI/bin/Debug/netcoreapp2.2/cojApiDev/package-lock.json
 /Users/pv/Documents/GitHub/cojAPI/bin/Debug/netcoreapp2.2/package-lock.json
 /Users/pv/Documents/GitHub/cojAPI/bin/Debug/netcoreapp2.2/Properties/launchSettings.json
 /Users/pv/Documents/GitHub/cojAPI/bin/Debug/netcoreapp2.2/cojApi.deps.json

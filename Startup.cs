@@ -68,13 +68,13 @@ namespace cojApi
             //var connection = @"Server=172.22.120.242,1434;Database=dbCOJ_Demo;User Id=sa;Password=sql!2019;";
             //var connection = @"Server=172.22.120.242,1434;Database=dbCOJ_Test;User Id=sa;Password=sql!2019;";
             
-            var connection = @"Server=127.0.0.1;Database=dbCOJ_TestDev;User Id=sa;Password=ievolution@2549;";
+            //var connection = @"Server=127.0.0.1;Database=dbCOJ_TestDev;User Id=sa;Password=ievolution@2549;";
             //var connection = @"Server=127.0.0.1;Database=dbCOJ_Dev;User Id=sa;Password=ievolution@2549;";
 
             //On Server
             //var connection = @"Server=BPRDBM01\BPRSQL;Database=dbCOJ;User Id=sa;Password=bpr@2019;"; //--> live
             //var connection = @"Server=BPRDBM01\BPRSQL;Database=dbCOJ_Dev;User Id=sa;Password=bpr@2019;"; //--> Dev
-            //var connection = @"Server=BPRDBM01\BPRSQL;Database=dbCOJ_TestDev;User Id=sa;Password=bpr@2019;"; //--> Dev
+            var connection = @"Server=BPRDBM01\BPRSQL;Database=dbCOJ_TestDev;User Id=sa;Password=bpr@2019;"; //--> Dev
             
 
             services.AddDbContext<cojDBContext>(opt => opt.UseSqlServer(connection, pvo => pvo.EnableRetryOnFailure()));
