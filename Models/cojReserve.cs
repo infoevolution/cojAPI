@@ -28,5 +28,17 @@ namespace cojApi.Models
         public string cojReserveTransferDocNo { get; set; }
         public string startDate { get; set; }
         public string endDate { get; set; }
+        public string responsibilityAgency {get;set;}
+        public string procumentAgency {get;set;}
+        public string disbursementAgency {get;set;}
+        public int cojReserveType {get;set;}
+        public int cojReserveStatus {get;set;}
+        public long cojBGPlanAllotId {get;set;}
+        public long cojBGTransferRequestId {get;set;}
+        public long cojBGTransferId {get;set;}
+        public long cojWorkActivityItemId {get;set;}
+        public string cojRequestItemDetail {get;set;}
+        public string remark {get;set;}
+        public long cojCarryOverItemId {get;set;}
     }
 }

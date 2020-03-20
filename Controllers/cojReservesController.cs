@@ -222,7 +222,19 @@ namespace cojApi.Controllers {
                     cojReserveFeeB = item.cojReserveFeeB,
                     cojReserveFeeC = item.cojReserveFeeC,
                     cojReserveFeeAMT = item.cojReserveFeeAMT,
-                    cojReserveTransferDocNo = item.cojReserveTransferDocNo
+                    cojReserveTransferDocNo = item.cojReserveTransferDocNo,
+                    responsibilityAgency = item.responsibilityAgency,
+                    procumentAgency = item.procumentAgency,
+	                disbursementAgency = item.disbursementAgency,
+                    cojReserveType = item.cojReserveType,
+                    cojReserveStatus = item.cojReserveStatus,
+                    cojBGPlanAllotId = item.cojBGPlanAllotId,
+                    cojBGTransferRequestId = item.cojBGTransferRequestId,
+                    cojBGTransferId = item.cojBGTransferId,
+                    cojWorkActivityItemId = item.cojWorkActivityItemId,
+                    cojRequestItemDetail = item.cojRequestItemDetail,
+                    remark=item.remark,
+                    cojCarryOverItemId=item.cojCarryOverItemId
                     // startDate = DateTime.Now.ToString (_culture),
                     // endDate = "31/12/9999 00:00:00"
                 };
