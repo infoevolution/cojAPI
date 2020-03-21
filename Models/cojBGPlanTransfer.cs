@@ -17,7 +17,6 @@ namespace cojApi.Models
         public double cojBGPlanQ2 { get; set; }
         public double cojBGPlanQ3 { get; set; }
         public double cojBGPlanQ4 { get; set; }
-
         public double cojBGExtraQ1 { get; set; }
         public double cojBGExtraQ2 { get; set; }
         public double cojBGExtraQ3 { get; set; }

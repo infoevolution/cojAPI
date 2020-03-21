@@ -274,7 +274,7 @@ namespace cojApi.Models {
                 .HasKey (a => new { a.idRef});
 
             modelBuilder.Entity<fblCojBGPlanQuarter> ()
-                .HasKey (a => new { a.idRef, a.idRefPlan});
+                .HasKey (a => new { a.idRef, a.idRefPlan, a.isRegionReserve});
 
             //sp
             modelBuilder.Entity<spCojFYWorkplan> ()

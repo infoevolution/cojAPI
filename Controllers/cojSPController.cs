@@ -31,7 +31,7 @@ namespace cojApi.Controllers {
 
             try {
                 
-                var _ret = await _context.fblCojBGPlanQuarter.FromSql ($"select * from fbl_cojBGPlanQuarter({p.fy}, {p.cojBGWorkplanId}, {p.cojWorkActivityId}, {p.cojBudgetTypeId})").ToListAsync ();
+                var _ret = await _context.fblCojBGPlanQuarter.FromSql ($"select * from fbl_cojBGPlanQuarter({p.fy}, {p.cojBGWorkplanId}, {p.cojWorkActivityId}, {p.cojBudgetTypeId}) order by cojAgencyType, itemSort").ToListAsync ();
 
                 if (_ret.Count != 0) {
                     return _ret;
