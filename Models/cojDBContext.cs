@@ -150,6 +150,7 @@ namespace cojApi.Models {
 
         //sp Transfer Allot
         public virtual DbSet<spRet> sp_cojBGPlanTransferAllotPost { get; set; }
+        public virtual DbSet<spRet> sp_cojBGPlanQuarterPost { get; set; }
 
         //sp FY Transfer Request
         public virtual DbSet<spCojFYTransferRequest> spCojFYTransferRequests { get; set; }

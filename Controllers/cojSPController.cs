@@ -333,6 +333,24 @@ namespace cojApi.Controllers {
             }
         }
 
+        // POST: api/cojSP/cojBGPlanQuarterPost
+        //จัดเก็บข้อมูลรายละเอียดประกอบแผนฯ
+        [Route ("[action]")]
+        [HttpPost]
+        public async Task<ActionResult<IEnumerable<spRet>>> cojBGPlanQuarterPost (spParam data) {
+
+            try {
+                var _ret = await _context.sp_cojBGPlanQuarterPost.FromSql ($"sp_cojBGPlanQuarterPost {data.data}").ToListAsync ();
+
+                if (_ret.Count != 0) {
+                    return _ret;
+                }
+                return NoContent ();
+            } catch (Exception ex) {
+                return BadRequest (ex.Message);
+            }
+        }
+
         // POST: api/cojSP/cojBGPlanTransferAllotPost
         [Route ("[action]")]
         [HttpPost]
