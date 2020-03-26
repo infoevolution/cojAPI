@@ -71,4 +71,17 @@ namespace cojApi.Models
         public string startDate { get; set; }
         public string endDate { get; set; }
     }
+    public class spCojLoginRole
+    {
+        public long id {get; set;}
+        public long groupId { get; set; }
+        public long userId { get; set; }
+        public string cmd { get; set; }
+        public bool add { get; set; }
+        public bool edit { get; set; }
+        public bool view { get; set; }
+        public bool remove { get; set; }
+        public bool fullcontrol { get; set; }
+    }
+
 }

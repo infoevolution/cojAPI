@@ -19,11 +19,18 @@ namespace cojApi.Models
         public string msg { get; set; }
         
     }
+
+    public class spParamCojLogin
+    {
+        public long login { get; set;}   
+    }
+
     public class paramCojStg
     {
         public long fy { get; set;}
         public long cojStg { get; set; }   
     }
+
     public class paramCojBGPlanWork
     {
         public long fy { get; set;}

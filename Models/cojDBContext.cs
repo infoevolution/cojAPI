@@ -129,6 +129,7 @@ namespace cojApi.Models {
         public DbSet<cojAppConfig> cojAppConfigs { get; set; }
 
         //sp
+        public virtual DbSet<spCojLoginRole> spCojLoginRoles { get; set; }
         public virtual DbSet<spCojFY> spCojFYs { get; set; }
         public virtual DbSet<spCojFYWorkplanType> spCojFYWorkplanTypes { get; set; }
         public virtual DbSet<spCojFYWorkplan> spCojFYWorkplans { get; set; }
