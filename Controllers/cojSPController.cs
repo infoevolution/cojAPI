@@ -24,6 +24,60 @@ namespace cojApi.Controllers {
 
         //ftbl 
 
+        // POST: api/cojSP/fblCojBGPlanQuarterWorkplan
+        [Route ("[action]")]
+        [HttpPost]
+        public async Task<ActionResult<IEnumerable<fblCojBGPlanQuarterWorkplan>>> fblCojBGPlanQuarterWorkplan(paramCojBGPlanQuarter p) {
+
+            try {
+                
+                var _ret = await _context.fblCojBGPlanQuarterWorkplan.FromSql ($"select * from fbl_cojBGPlanQuarter_Workplan({p.fy}) order by cojBGWorkplanId").ToListAsync ();
+
+                if (_ret.Count != 0) {
+                    return _ret;
+                }
+                return NoContent ();
+            } catch (Exception ex) {
+                return BadRequest (ex.Message);
+            }
+        }
+
+        // POST: api/cojSP/fblCojBGPlanQuarterWorkplanActivity
+        [Route ("[action]")]
+        [HttpPost]
+        public async Task<ActionResult<IEnumerable<fblCojBGPlanQuarterWorkplanActivity>>> fblCojBGPlanQuarterWorkplanActivity (paramCojBGPlanQuarter p) {
+
+            try {
+                
+                var _ret = await _context.fblCojBGPlanQuarterWorkplanActivity.FromSql ($"select * from fbl_cojBGPlanQuarter_WorkplanActivity({p.fy}) order by cojBGWorkplanId, cojWorkActivityId").ToListAsync ();
+
+                if (_ret.Count != 0) {
+                    return _ret;
+                }
+                return NoContent ();
+            } catch (Exception ex) {
+                return BadRequest (ex.Message);
+            }
+        }
+
+        // POST: api/cojSP/fblCojBGPlanQuarterWorkplanActivityBudgetType
+        [Route ("[action]")]
+        [HttpPost]
+        public async Task<ActionResult<IEnumerable<fblCojBGPlanQuarterWorkplanActivityBudgetType>>> fblCojBGPlanQuarterWorkplanActivityBudgetType (paramCojBGPlanQuarter p) {
+
+            try {
+                
+                var _ret = await _context.fblCojBGPlanQuarterWorkplanActivityBudgetType.FromSql ($"select * from fbl_cojBGPlanQuarter_WorkplanActivityBudgetType({p.fy}) order by cojBGWorkplanId, cojWorkActivityId, cojBudgetType").ToListAsync ();
+
+                if (_ret.Count != 0) {
+                    return _ret;
+                }
+                return NoContent ();
+            } catch (Exception ex) {
+                return BadRequest (ex.Message);
+            }
+        }
+
         // POST: api/cojSP/fblCojBGPlanQuarter
         [Route ("[action]")]
         [HttpPost]
@@ -345,6 +399,24 @@ namespace cojApi.Controllers {
                     return Ok(_ret);
                 }
 
+               return NoContent ();
+            } catch (Exception ex) {
+                return BadRequest (ex.Message);
+            }
+        }
+
+        // POST: api/cojSP/cojBGPlanQuarterAllotPost
+        //จัดเก็บข้อมูลการอนุมัติเม็ดเงินตามรายละเอียดประกอบแผนฯ รายไตรมาส
+        [Route ("[action]")]
+        [HttpPost]
+        public async Task<ActionResult<IEnumerable<spRet>>> cojBGPlanQuarterAllotPost (paramCojBGPlanQuarterAllot data) {
+
+            try {
+                var _ret = await _context.sp_cojBGPlanQuarterAllotPost.FromSql ($"sp_cojBGPlanQuarterAllotPost {data.fy}, {data.allotQuarter}, {data.allotType}").ToListAsync ();
+
+                if (_ret.Count != 0) {
+                    return _ret;
+                }
                 return NoContent ();
             } catch (Exception ex) {
                 return BadRequest (ex.Message);

@@ -55,4 +55,12 @@ namespace cojApi.Models
         
     }
 
+    public class paramCojBGPlanQuarterAllot
+    {
+        public int fy { get; set;}
+        public long allotQuarter { get; set; }
+        public long allotType { get; set;}
+        
+    }
+
 }

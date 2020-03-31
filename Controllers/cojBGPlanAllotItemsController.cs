@@ -229,7 +229,12 @@ namespace cojApi.Controllers {
                     cojBGTransferId = item.cojBGTransferId,
                     itemTypeId = item.itemTypeId,
                     flagIntegration = item.flagIntegration,
-                    flagRegionReserve = item.flagRegionReserve
+                    flagRegionReserve = item.flagRegionReserve,
+                    responsibilityAgency = item.responsibilityAgency ,
+                    procumentAgency = item.procumentAgency,
+                    disbursementAgency = item.disbursementAgency,
+                    flagAgencyReserve = item.flagAgencyReserve,
+                    cojFund = item.cojFund
                     // startDate = DateTime.Now.ToString (_culture),
                     // endDate = "31/12/9999 00:00:00"
                 };

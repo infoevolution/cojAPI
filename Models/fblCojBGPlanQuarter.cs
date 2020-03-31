@@ -27,6 +27,7 @@ namespace cojApi.Models {
         public double cojBGExtraQ3 { get; set; }
         public double cojBGExtraQ4 { get; set; }
         public double cojBGPlanAMT { get; set; }
+
         [Key, ColumnAttribute (Order = 1)]
         public bool isRegionReserve { get; set; }
         public long procumentAgencyId { get; set; }
@@ -34,6 +35,7 @@ namespace cojApi.Models {
         public string coBudgetAgencys { get; set; }
         public string remark { get; set; }
         public long idPlan { get; set; }
+
         [Key, ColumnAttribute (Order = 2)]
         public long idRefPlan { get; set; }
         public double cojBGPlanAllotQ1 { get; set; }
@@ -46,6 +48,96 @@ namespace cojApi.Models {
         public double cojBGExtraAllotQ4 { get; set; }
         public double cojBGPlanAllotAMT { get; set; }
         public double itemSort { get; set; }
+
+    }
+
+    public class fblCojBGPlanQuarterWorkplan {
+
+        [Key, ColumnAttribute (Order = 0)]
+        public int fy { get; set; }
+
+        [Key, ColumnAttribute (Order = 1)]
+        public long cojFund { get; set; }
+
+        [Key, ColumnAttribute (Order = 2)]
+        public long cojWorkplanTypeId { get; set; }
+
+        [Key, ColumnAttribute (Order = 3)]
+        public long cojBGWorkplanId { get; set; }
+        public string cojBGWorkplanName { get; set; }
+        public double cojBGPlanAllotQ1 { get; set; }
+        public double cojBGPlanAllotQ2 { get; set; }
+        public double cojBGPlanAllotQ3 { get; set; }
+        public double cojBGPlanAllotQ4 { get; set; }
+        public double cojBGPlanAllotAMT { get; set; }
+        public double cojBGExtraAllotQ1 { get; set; }
+        public double cojBGExtraAllotQ2 { get; set; }
+        public double cojBGExtraAllotQ3 { get; set; }
+        public double cojBGExtraAllotQ4 { get; set; }
+        public double cojBGExtraAllotAMT { get; set; }
+
+    }
+
+    public class fblCojBGPlanQuarterWorkplanActivity {
+
+        [Key, ColumnAttribute (Order = 0)]
+        public int fy { get; set; }
+
+        [Key, ColumnAttribute (Order = 1)]
+        public long cojFund { get; set; }
+
+        [Key, ColumnAttribute (Order = 2)]
+        public long cojWorkplanTypeId { get; set; }
+
+        [Key, ColumnAttribute (Order = 3)]
+        public long cojBGWorkplanId { get; set; }
+
+        [Key, ColumnAttribute (Order = 4)]
+        public long cojWorkActivityId { get; set; }
+        public string cojWorkActivityName { get; set; }
+        public double cojBGPlanAllotQ1 { get; set; }
+        public double cojBGPlanAllotQ2 { get; set; }
+        public double cojBGPlanAllotQ3 { get; set; }
+        public double cojBGPlanAllotQ4 { get; set; }
+        public double cojBGPlanAllotAMT { get; set; }
+        public double cojBGExtraAllotQ1 { get; set; }
+        public double cojBGExtraAllotQ2 { get; set; }
+        public double cojBGExtraAllotQ3 { get; set; }
+        public double cojBGExtraAllotQ4 { get; set; }
+        public double cojBGExtraAllotAMT { get; set; }
+
+    }
+
+    public class fblCojBGPlanQuarterWorkplanActivityBudgetType {
+
+        [Key, ColumnAttribute (Order = 0)]
+        public int fy { get; set; }
+
+        [Key, ColumnAttribute (Order = 1)]
+        public long cojFund { get; set; }
+
+        [Key, ColumnAttribute (Order = 2)]
+        public long cojWorkplanTypeId { get; set; }
+
+        [Key, ColumnAttribute (Order = 3)]
+        public long cojBGWorkplanId { get; set; }
+
+        [Key, ColumnAttribute (Order = 4)]
+        public long cojWorkActivityId { get; set; }
+
+        [Key, ColumnAttribute (Order = 5)]
+        public long cojBudgetType { get; set; }
+        public string cojBudgetTypeName { get; set; }
+        public double cojBGPlanAllotQ1 { get; set; }
+        public double cojBGPlanAllotQ2 { get; set; }
+        public double cojBGPlanAllotQ3 { get; set; }
+        public double cojBGPlanAllotQ4 { get; set; }
+        public double cojBGPlanAllotAMT { get; set; }
+        public double cojBGExtraAllotQ1 { get; set; }
+        public double cojBGExtraAllotQ2 { get; set; }
+        public double cojBGExtraAllotQ3 { get; set; }
+        public double cojBGExtraAllotQ4 { get; set; }
+        public double cojBGExtraAllotAMT { get; set; }
 
     }
 

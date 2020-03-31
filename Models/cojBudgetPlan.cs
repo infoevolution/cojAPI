@@ -1,10 +1,8 @@
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace cojApi.Models
-{
+namespace cojApi.Models {
 
-    public class cojBGPlan
-    {
+    public class cojBGPlan {
         public long id { get; set; }
         public long idRef { get; set; }
         public string name { get; set; }
@@ -23,8 +21,7 @@ namespace cojApi.Models
         public string note { get; set; }
     }
 
-    public class cojBGPlanSum
-    {
+    public class cojBGPlanSum {
         public long id { get; set; }
         public long idRef { get; set; }
         public string code { get; set; }
@@ -40,8 +37,7 @@ namespace cojApi.Models
         public string endDate { get; set; }
     }
 
-    public class cojBGPlanStg
-    {
+    public class cojBGPlanStg {
         public long id { get; set; }
         public long idRef { get; set; }
         public string code { get; set; }
@@ -61,8 +57,7 @@ namespace cojApi.Models
         public string endDate { get; set; }
     }
 
-    public class cojBGPlanStgWorkplanType
-    {
+    public class cojBGPlanStgWorkplanType {
         public long id { get; set; }
         public long idRef { get; set; }
         public string code { get; set; }
@@ -167,29 +162,28 @@ namespace cojApi.Models
         public long cojBGWorkplanActivityItemParentId { get; set; }
         public long cojBGWorkplanActivityItemLevel { get; set; }
         public string remark { get; set; }
-        public string startDate { get; set; } 
+        public string startDate { get; set; }
         public string endDate { get; set; }
         public string procumentAgency { get; set; }
         public string disbursementAgency { get; set; }
         public string responsibilityAgency { get; set; }
     }
 
-    public class cojBGPlanStgGoals
-    {
-       public long id { get; set; }
-       public long idRef { get; set; }
-       public string code { get; set; }
-       public string name { get; set; }
-       public long cojBGPlanId { get; set; }
-       public long cojStgPlanId { get; set; }
-       public long cojStgId { get; set; }
-       public long cojBGPlanStgGoal { get; set; }
-       public string cojBGPlanStgGoalUnit { get; set; }
-       public string remark { get; set; }
-       public string startDate { get; set; }
-       public string endDate { get; set; }
+    public class cojBGPlanStgGoals {
+        public long id { get; set; }
+        public long idRef { get; set; }
+        public string code { get; set; }
+        public string name { get; set; }
+        public long cojBGPlanId { get; set; }
+        public long cojStgPlanId { get; set; }
+        public long cojStgId { get; set; }
+        public long cojBGPlanStgGoal { get; set; }
+        public string cojBGPlanStgGoalUnit { get; set; }
+        public string remark { get; set; }
+        public string startDate { get; set; }
+        public string endDate { get; set; }
     }
-    
+
     public class cojBGPlanWorkplanActivityIndicator {
         public long id { get; set; }
         public long idRef { get; set; }
@@ -205,7 +199,7 @@ namespace cojApi.Models
         public string startDate { get; set; }
         public string endDate { get; set; }
     }
-    
+
     public class cojBGPlanWorkplanActivityOperation {
         public long id { get; set; }
         public long idRef { get; set; }
@@ -222,7 +216,7 @@ namespace cojApi.Models
         public string startDate { get; set; }
         public string endDate { get; set; }
     }
-    
+
     public class cojBGPlanWorkplanActivityObjective {
         public long id { get; set; }
         public long idRef { get; set; }
@@ -280,7 +274,7 @@ namespace cojApi.Models
         public string startDate { get; set; }
         public string endDate { get; set; }
     }
-    
+
     public class cojBGPlanWorkplanAgency {
         public long id { get; set; }
         public long idRef { get; set; }
@@ -359,7 +353,7 @@ namespace cojApi.Models
         public string startDate { get; set; }
         public string endDate { get; set; }
     }
-   
+
     public class cojBGPlanAllot {
         public long id { get; set; }
 
@@ -395,6 +389,9 @@ namespace cojApi.Models
         public string approveDate { get; set; }
         public string startDate { get; set; }
         public string endDate { get; set; }
+        public bool flagAgencyReserve { get; set; }
+        public int cojFundFY { get; set; }
+        public long cojCarryOverItemId { get; set; }
     }
 
     public class cojBGPlanAllotItem {
@@ -416,9 +413,14 @@ namespace cojApi.Models
         public double itemTransferAMT { get; set; }
         public long cojBGTransferId { get; set; }
         public long itemTypeId { get; set; }
-        public bool flagIntegration {get;set;}
-	    public bool flagRegionReserve {get;set;}
+        public bool flagIntegration { get; set; }
+        public bool flagRegionReserve { get; set; }
         public string startDate { get; set; }
         public string endDate { get; set; }
+        public string responsibilityAgency { get; set; }
+        public string procumentAgency { get; set; }
+        public string disbursementAgency { get; set; }
+        public bool flagAgencyReserve { get; set; }
+        public long cojFund { get; set; }
     }
 }

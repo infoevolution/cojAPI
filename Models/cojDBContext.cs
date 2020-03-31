@@ -152,6 +152,7 @@ namespace cojApi.Models {
         //sp Transfer Allot
         public virtual DbSet<spRet> sp_cojBGPlanTransferAllotPost { get; set; }
         public virtual DbSet<spRet> sp_cojBGPlanQuarterPost { get; set; }
+        public virtual DbSet<spRet> sp_cojBGPlanQuarterAllotPost { get; set; }
 
         //sp FY Transfer Request
         public virtual DbSet<spCojFYTransferRequest> spCojFYTransferRequests { get; set; }
@@ -205,6 +206,13 @@ namespace cojApi.Models {
         public virtual DbQuery<vwCojRequestTransferAllotBGPlanWorkActivityBudgetTypeAllot> vwCojRequestTransferAllotBGPlanWorkActivityBudgetTypeAllots { get; set; }
         public virtual DbQuery<vwCojAgencyAccountBook> vwCojAgencyAccountBooks { get; set; }
 
+        //** Allot : อนุมัติเม็ดเงิน เงินสำรองภาค
+         public virtual DbQuery<vwCojRegionReserveFYWorkActivityBudgetType> vwCojRegionReserveFYWorkActivityBudgetTypes { get; set; }
+        
+        public virtual DbQuery<vwCojRegionReserveFYWorkActivity> vwCojRegionReserveFYWorkActivitys { get; set; }
+        public virtual DbQuery<vwCojRegionReserveFYWork> vwCojRegionReserveFYWorks { get; set; }
+        public virtual DbQuery<vwCojRegionReserveFYAgency> vwCojRegionReserveFYAgencys { get; set; }
+
         //ftbl : function table
         public virtual DbSet<cojBGPlanWork> ftblCojBGPlanWork { get; set; }
         public virtual DbSet<cojBGPlanWorkActivity> ftblCojBGPlanWorkActivity { get; set; }
@@ -228,6 +236,9 @@ namespace cojApi.Models {
         public virtual DbSet<fblCojFYAgencyAccountRI> fblCojFYAgencyAccountRI { get; set; }
 
         public virtual DbSet<fblCojBGPlanQuarter> fblCojBGPlanQuarter { get; set; }
+        public virtual DbSet<fblCojBGPlanQuarterWorkplan> fblCojBGPlanQuarterWorkplan { get; set; }
+        public virtual DbSet<fblCojBGPlanQuarterWorkplanActivity> fblCojBGPlanQuarterWorkplanActivity { get; set; }
+        public virtual DbSet<fblCojBGPlanQuarterWorkplanActivityBudgetType> fblCojBGPlanQuarterWorkplanActivityBudgetType { get; set; }
 
         protected override void OnModelCreating (ModelBuilder modelBuilder) {
 
@@ -271,12 +282,20 @@ namespace cojApi.Models {
             modelBuilder.Entity<fblCojFYCojStgWorkplanActivityBGTypeFund> ()
                 .HasKey (a => new { a.fy, a.cojStgId, a.cojWorkplanTypeId, a.cojBGWorkplanId, a.cojWorkActivityId, a.cojBudgetTypeId, a.cojFund });
 
-
             modelBuilder.Entity<fblCojFYAgencyAccountRI> ()
-                .HasKey (a => new { a.idRef});
+                .HasKey (a => new { a.idRef });
 
             modelBuilder.Entity<fblCojBGPlanQuarter> ()
-                .HasKey (a => new { a.idRef, a.idRefPlan, a.isRegionReserve});
+                .HasKey (a => new { a.idRef, a.idRefPlan, a.isRegionReserve });
+
+            modelBuilder.Entity<fblCojBGPlanQuarterWorkplan> ()
+                .HasKey (a => new { a.fy, a.cojFund, a.cojWorkplanTypeId, a.cojBGWorkplanId });
+
+            modelBuilder.Entity<fblCojBGPlanQuarterWorkplanActivity> ()
+                .HasKey (a => new { a.fy, a.cojFund, a.cojWorkplanTypeId, a.cojBGWorkplanId, a.cojWorkActivityId });
+
+            modelBuilder.Entity<fblCojBGPlanQuarterWorkplanActivityBudgetType> ()
+                .HasKey (a => new { a.fy, a.cojFund, a.cojWorkplanTypeId, a.cojBGWorkplanId, a.cojWorkActivityId, a.cojBudgetType });
 
             //sp
             modelBuilder.Entity<spCojFYWorkplan> ()
@@ -302,14 +321,11 @@ namespace cojApi.Models {
             modelBuilder.Entity<spCojBGTransferRequestAgencyPropose> ()
                 .HasKey (a => new { a.allotFy, a.cojBGPlanAllotToAgency });
 
-            //modelBuilder.Entity<vwCojAllotRequestTransferBGPlanWorkplanType> ()
-            //    .HasKey (a => new { a.cojBGPlanId, a.cojWorkplanTypeId });
-
             //modelBuilder.Entity<vwCojAllotRequestTransferBGPlanWorkActivity> ()
             //    .HasKey (a => new { a.cojBGPlanId, a.cojWorkplanTypeId, a.cojBGWorkplanId, a.cojWorkActivityId });
 
             //add : 27-01-2563 --> end
-            
+
             //add : 28-01-2563 --> start
             modelBuilder.Entity<spCojBGTransferRequestAgencyProposeSumCOJ> ()
                 .HasKey (a => new { a.allotFy, a.cojFund });
@@ -326,7 +342,15 @@ namespace cojApi.Models {
                 .HasKey (a => new { a.itemNo, a.cojAgencyAccountId });
             //add : 09-02-2563 --> end
 
-            modelBuilder.Query<vwCojBGTransferRequestAgency> ().ToView ("vw_cojBGTransferRequestAgencys");
+            //อนุมัติเม็ดเงิน : เงินสำรองภาค
+
+            modelBuilder.Query<vwCojRegionReserveFYAgency> ().ToView ("vw_cojRegionReserveFYAgency");
+            modelBuilder.Query<vwCojRegionReserveFYWork> ().ToView ("vw_cojRegionReserveFYWork");
+            modelBuilder.Query<vwCojRegionReserveFYWorkActivity> ().ToView ("vw_cojRegionReserveFYWorkActivity");            
+            modelBuilder.Query<vwCojRegionReserveFYWorkActivityBudgetType> ().ToView ("vw_cojRegionReserveFYWorkActivityBudgetType");
+
+
+            // modelBuilder.Query<vwCojBGTransferRequestAgency> ().ToView ("vw_cojBGTransferRequestAgencys");
 
             modelBuilder.Query<vwCojBGTransferRequestAgencyItem> ().ToView ("vw_cojBGTransferRequestAgencyItems");
             //-------

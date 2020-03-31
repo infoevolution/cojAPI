@@ -86,6 +86,27 @@ namespace cojApi.Controllers {
             }
         }
 
+        // GET: api/cojBGPlanAllots/fy
+        [Route ("[action]/{fy}")]
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<cojBGPlanAllot>>> fy (int fy) {
+            
+            try
+            {
+                var _cojBGPlanAllot = await _context.cojBGPlanAllots.Where (x => x.allotFy == fy).OrderBy (a => a.idRef).ToListAsync ();
+
+                if(_cojBGPlanAllot.Count != 0)
+                {
+                    return Ok(_cojBGPlanAllot);
+                }
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
         // // GET: api/cojBGPlanAllots/searchName
         // [Route("[action]/{term}")]
         // [HttpGet]
@@ -226,7 +247,10 @@ namespace cojApi.Controllers {
                     auditDate = item.auditDate,
                     approveUser = item.approveUser,
                     approveUserName = item.approveUserName,
-                    approveDate = item.approveDate
+                    approveDate = item.approveDate,
+                    flagAgencyReserve = item.flagAgencyReserve,
+                    cojFundFY = item.cojFundFY,
+                    cojCarryOverItemId = item.cojCarryOverItemId
                     // startDate = DateTime.Now.ToString (_culture),
                     // endDate = "31/12/9999 00:00:00"
                 };

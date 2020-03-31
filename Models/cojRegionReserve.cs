@@ -1,4 +1,67 @@
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace cojApi.Models {
+
+    //version 1 : ใช้ตาราง Allot , AllotItem ร่วมกันทั้งระบบ
+
+    public class vwCojRegionReserveFYWorkActivityBudgetType {
+
+        public long itemNo { get; set; }
+        public string key { get; set; }
+        public long fy { get; set; }
+        public long cojWorkplanTypeId { get; set; }
+        public long cojBGWorkplanId { get; set; }
+        public long cojWorkActivityId { get; set; }
+        public int cojBudgetTypeId { get; set; }
+        public double cojBGPlanSumAMT { get; set; }
+        public long cojAgencyId { get; set; }
+        public string cojBudgetTypeName { get; set; }
+        public double itemAllotRequestAMT { get; set; }
+        public double itemAllotAMT { get; set; }
+        public double itemTransferRequestAMT { get; set; }
+        public double itemTransferAMT { get; set; }
+    }
+
+    public class vwCojRegionReserveFYWorkActivity {
+        public long fy { get; set; }
+        public long cojAgencyId { get; set; }
+        public long cojWorkplanTypeId { get; set; }
+        public long cojBGWorkplanId { get; set; }
+        public long cojWorkActivityId { get; set; }
+        public string cojWorkActivityName { get; set; }
+        public double cojBGPlanSumAMT { get; set; }
+        public double itemAllotRequestAMT { get; set; }
+        public double itemAllotAMT { get; set; }
+        public double itemTransferRequestAMT { get; set; }
+        public double itemTransferAMT { get; set; }
+    }
+
+    public class vwCojRegionReserveFYWork {
+        public long fy { get; set; }
+    public long cojAgencyId { get; set; }
+        public long cojWorkplanTypeId { get; set; }
+        public long cojBGWorkplanId { get; set; }
+        public string cojBGWorkplanName { get; set; }
+        public double cojBGPlanSumAMT { get; set; }
+        public double itemAllotRequestAMT { get; set; }
+        public double itemAllotAMT { get; set; }
+        public double itemTransferRequestAMT { get; set; }
+        public double itemTransferAMT { get; set; }
+    }
+    
+    public class vwCojRegionReserveFYAgency {
+        public long fy { get; set; }
+        public long cojAgencyId { get; set; }
+        public string cojAgencyName { get; set; }
+        public double cojBGPlanSumAMT { get; set; }
+        public double itemAllotRequestAMT { get; set; }
+        public double itemAllotAMT { get; set; }
+        public double itemTransferRequestAMT { get; set; }
+        public double itemTransferAMT { get; set; }
+    }
+
+    // version 0
     public class cojRegionReserveAllot {
         public long id { get; set; }
         public long idRef { get; set; }
