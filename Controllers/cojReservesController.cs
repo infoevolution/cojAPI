@@ -86,6 +86,27 @@ namespace cojApi.Controllers {
             }
         }
 
+        // GET: api/cojReserves/AllotSummary
+        [Route ("[action]/{fy}")]
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<cojReserveAllotSummary>>> AllotSummary (long fy) {
+            
+            try
+            {
+                var _ret = await _context.cojReserveAllotSummary.FromSql ($"select * from fvw_cojFYcojReserveSummary({fy})").ToListAsync ();
+
+                if(_ret.Count != 0)
+                {
+                    return Ok(_ret);
+                }
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
         // // GET: api/cojReserves/searchName
         // [Route("[action]/{term}")]
         // [HttpGet]
@@ -279,4 +300,6 @@ namespace cojApi.Controllers {
         }
 
     }
+
+    
 }

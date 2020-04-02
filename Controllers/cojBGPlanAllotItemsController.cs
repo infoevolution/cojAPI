@@ -1,3 +1,4 @@
+using System.IO.Compression;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -29,6 +30,55 @@ namespace cojApi.Controllers {
             try
             {
                 var _cojBGPlanAllotItem = await _context.cojBGPlanAllotItems.Where(x => x.endDate == "31/12/9999 00:00:00").OrderBy (a => a.idRef).ToListAsync ();
+                
+                if(_cojBGPlanAllotItem.Count != 0)
+                {
+                    return Ok(_cojBGPlanAllotItem);
+                }
+                return NoContent();
+
+            }
+            catch(Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            
+        }
+
+        // GET: api/cojBGPlanAllotItems/RegionReserve
+        [Route ("[action]")]
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<cojBGPlanAllotItem>>> RegionReserve () {
+
+
+            try
+            {
+                var _cojBGPlanAllotItem = await _context.cojBGPlanAllotItems.Where(x => x.endDate == "31/12/9999 00:00:00" && x.flagRegionReserve == true && x.itemLevel==0).OrderBy (a => a.idRef).ToListAsync ();
+                
+                if(_cojBGPlanAllotItem.Count != 0)
+                {
+                    return Ok(_cojBGPlanAllotItem);
+                }
+                return NoContent();
+
+            }
+            catch(Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            
+        }
+
+
+        // GET: api/cojBGPlanAllotItems/RegionReserveItems
+        [Route ("[action]")]
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<cojBGPlanAllotItem>>> RegionReserveItems () {
+
+
+            try
+            {
+                var _cojBGPlanAllotItem = await _context.cojBGPlanAllotItems.Where(x => x.endDate == "31/12/9999 00:00:00" && x.flagRegionReserve == true && x.itemLevel==1).OrderBy (a => a.idRef).ToListAsync ();
                 
                 if(_cojBGPlanAllotItem.Count != 0)
                 {

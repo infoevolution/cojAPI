@@ -44,6 +44,28 @@ namespace cojApi.Controllers {
             
         }
 
+
+        //GET: api/cojBGPlanWorkplanActivitys/cojReserves
+        [Route ("[action]")]
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<cojBGPlanWorkplanActivity>>> cojReserves () {
+            
+            try
+            {
+                var _cojBGPlanWorkplanActivity = await _context.cojBGPlanWorkplanActivities.Where(a=>a.cojWorkActivityId==21).ToListAsync();
+
+                if(_cojBGPlanWorkplanActivity.Count != 0)
+                {
+                    return Ok(_cojBGPlanWorkplanActivity);
+                }
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
         //GET: api/cojBGPlanWorkplanActivity/GetAll
         [Route ("[action]")]
         [HttpGet]

@@ -239,6 +239,7 @@ namespace cojApi.Models {
         public virtual DbSet<fblCojBGPlanQuarterWorkplan> fblCojBGPlanQuarterWorkplan { get; set; }
         public virtual DbSet<fblCojBGPlanQuarterWorkplanActivity> fblCojBGPlanQuarterWorkplanActivity { get; set; }
         public virtual DbSet<fblCojBGPlanQuarterWorkplanActivityBudgetType> fblCojBGPlanQuarterWorkplanActivityBudgetType { get; set; }
+        public virtual DbSet<cojReserveAllotSummary> cojReserveAllotSummary { get; set; }
 
         protected override void OnModelCreating (ModelBuilder modelBuilder) {
 
@@ -296,6 +297,10 @@ namespace cojApi.Models {
 
             modelBuilder.Entity<fblCojBGPlanQuarterWorkplanActivityBudgetType> ()
                 .HasKey (a => new { a.fy, a.cojFund, a.cojWorkplanTypeId, a.cojBGWorkplanId, a.cojWorkActivityId, a.cojBudgetType });
+
+            modelBuilder.Entity<cojReserveAllotSummary> ()
+                .HasKey (a => new { a.fy, a.cojFund});
+
 
             //sp
             modelBuilder.Entity<spCojFYWorkplan> ()
