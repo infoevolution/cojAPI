@@ -301,6 +301,40 @@ namespace cojApi.Controllers {
             }
         }
 
+        // POST: api/cojSP/fblCojFYWorkplanActivityBGTypeFundsB
+        [Route ("[action]")]
+        [HttpPost]
+        public async Task<ActionResult<IEnumerable<fblCojFYWorkplanActivityBGTypeFundB>>> fblCojFYWorkplanActivityBGTypeFundsB (paramCojBGPlanWork p) {
+
+            try {
+                var _ret = await _context.fblCojFYWorkplanActivityBGTypeFundB.FromSql ($"select * from fbl_cojFYWorkplanActivityBGTypeFund_B({p.fy})").ToListAsync ();
+
+                if (_ret.Count != 0) {
+                    return _ret;
+                }
+                return NoContent ();
+            } catch (Exception ex) {
+                return BadRequest (ex.Message);
+            }
+        }
+
+        // POST: api/cojSP/fblCojFYWorkplanBGTypeFundsB
+        [Route ("[action]")]
+        [HttpPost]
+        public async Task<ActionResult<IEnumerable<fblCojFYWorkplanBGTypeFundB>>> fblCojFYWorkplanBGTypeFundsB (paramCojBGPlanWork p) {
+
+            try {
+                var _ret = await _context.fblCojFYWorkplanBGTypeFundB.FromSql ($"select * from fbl_cojFYWorkplanBGTypeFund_B({p.fy})").ToListAsync ();
+
+                if (_ret.Count != 0) {
+                    return _ret;
+                }
+                return NoContent ();
+            } catch (Exception ex) {
+                return BadRequest (ex.Message);
+            }
+        }
+
         // POST: api/cojSP/cojBGPlanWorks
         [Route ("[action]")]
         [HttpPost]
@@ -1008,6 +1042,8 @@ namespace cojApi.Controllers {
                 return BadRequest (ex.Message);
             }
         }
+
+        
         // GET: api/cojSP/cojFYTransferAllotWorks
         [Route ("[action]")]
         [HttpPost]

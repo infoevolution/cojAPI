@@ -107,6 +107,74 @@ namespace cojApi.Controllers {
             }
         }
 
+        // GET: api/cojBGPlanAllots/FYAllotWorkplan
+        [Route ("[action]/{fy}")]
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<vwCojFYAllotWorkplan>>> FYAllotWorkplan (int fy) {
+
+            try {
+                var _ret = await _context.vwCojFYAllotWorkplans.Where(a => a.fy==fy).ToListAsync ();
+
+                if (_ret.Count != 0) {
+                    return Ok (_ret);
+                }
+                return NoContent ();
+            } catch (Exception ex) {
+                return BadRequest (ex.Message);
+            }
+        }
+
+        // GET: api/cojBGPlanAllots/FYAllotWorkActivity
+        [Route ("[action]/{fy}")]
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<vwCojRegionReserveFYWorkActivity>>> FYAllotWorkActivity (int fy) {
+
+            try {
+                var _ret = await _context.vwCojRegionReserveFYWorkActivitys.Where(a => a.fy==fy).ToListAsync ();
+
+                if (_ret.Count != 0) {
+                    return Ok (_ret);
+                }
+                return NoContent ();
+            } catch (Exception ex) {
+                return BadRequest (ex.Message);
+            }
+        }
+
+        // GET: api/cojBGPlanAllots/FYAllotWorkActivityBudgetType
+        [Route ("[action]/{fy}")]
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<vwCojFYAllotWorkplanActivityBudgetType>>> FYAllotWorkActivityBudgetType (int fy) {
+
+            try {
+                var _ret = await _context.vwCojFYAllotWorkplanActivityBudgetTypes.Where(a => a.fy==fy).ToListAsync ();
+
+                if (_ret.Count != 0) {
+                    return Ok (_ret);
+                }
+                return NoContent ();
+            } catch (Exception ex) {
+                return BadRequest (ex.Message);
+            }
+        }
+
+        // GET: api/cojBGPlanAllots/FYAllotWorkActivityBudgetTypeAllot
+        [Route ("[action]/{fy}")]
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<vwCojFYAllotWorkplanActivityBudgetTypeAllot>>> FYAllotWorkActivityBudgetTypeAllot (int fy) {
+
+            try {
+                var _ret = await _context.vwCojFYAllotWorkplanActivityBudgetTypeAllots.Where(a => a.allotFy==fy).ToListAsync ();
+
+                if (_ret.Count != 0) {
+                    return Ok (_ret);
+                }
+                return NoContent ();
+            } catch (Exception ex) {
+                return BadRequest (ex.Message);
+            }
+        }
+
         // // GET: api/cojBGPlanAllots/searchName
         // [Route("[action]/{term}")]
         // [HttpGet]

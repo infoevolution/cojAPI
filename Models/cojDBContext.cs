@@ -207,11 +207,17 @@ namespace cojApi.Models {
         public virtual DbQuery<vwCojAgencyAccountBook> vwCojAgencyAccountBooks { get; set; }
 
         //** Allot : อนุมัติเม็ดเงิน เงินสำรองภาค
-         public virtual DbQuery<vwCojRegionReserveFYWorkActivityBudgetType> vwCojRegionReserveFYWorkActivityBudgetTypes { get; set; }
-        
+        public virtual DbQuery<vwCojRegionReserveFYWorkActivityBudgetType> vwCojRegionReserveFYWorkActivityBudgetTypes { get; set; }
+
         public virtual DbQuery<vwCojRegionReserveFYWorkActivity> vwCojRegionReserveFYWorkActivitys { get; set; }
         public virtual DbQuery<vwCojRegionReserveFYWork> vwCojRegionReserveFYWorks { get; set; }
         public virtual DbQuery<vwCojRegionReserveFYAgency> vwCojRegionReserveFYAgencys { get; set; }
+
+        //** Allot : อนุมัติเม็ดเงิน
+        public virtual DbQuery<vwCojFYAllotWorkplan> vwCojFYAllotWorkplans { get; set; }
+        public virtual DbQuery<vwCojFYAllotWorkplanActivity> vwCojFYAllotWorkplanActivitys { get; set; }
+        public virtual DbQuery<vwCojFYAllotWorkplanActivityBudgetType> vwCojFYAllotWorkplanActivityBudgetTypes { get; set; }
+        public virtual DbQuery<vwCojFYAllotWorkplanActivityBudgetTypeAllot> vwCojFYAllotWorkplanActivityBudgetTypeAllots { get; set; }
 
         //ftbl : function table
         public virtual DbSet<cojBGPlanWork> ftblCojBGPlanWork { get; set; }
@@ -225,6 +231,10 @@ namespace cojApi.Models {
         public virtual DbSet<fblCojFYWorkplanActivity> fblCojFYWorkplanActivity { get; set; }
         public virtual DbSet<fblCojFYWorkplanActivityBGType> fblCojFYWorkplanActivityBGType { get; set; }
         public virtual DbSet<fblCojFYWorkplanActivityBGTypeFund> fblCojFYWorkplanActivityBGTypeFund { get; set; }
+
+        public virtual DbSet<fblCojFYWorkplanActivityBGTypeFundB> fblCojFYWorkplanActivityBGTypeFundB { get; set; }
+
+        public virtual DbSet<fblCojFYWorkplanBGTypeFundB> fblCojFYWorkplanBGTypeFundB { get; set; }
 
         public virtual DbSet<fblCojFYCojStg> fblCojFYCojStg { get; set; }
         public virtual DbSet<fblCojFYCojStgWorkplanType> fblCojFYCojStgWorkplanType { get; set; }
@@ -270,6 +280,12 @@ namespace cojApi.Models {
             modelBuilder.Entity<fblCojFYWorkplanActivityBGTypeFund> ()
                 .HasKey (a => new { a.fy, a.cojWorkplanTypeId, a.cojBGWorkplanId, a.cojWorkActivityId, a.cojBudgetTypeId, a.cojFund });
 
+            modelBuilder.Entity<fblCojFYWorkplanActivityBGTypeFundB> ()
+                .HasKey (a => new { a.fy, a.cojWorkplanTypeId, a.cojBGWorkplanId, a.cojWorkActivityId, a.cojBudgetTypeId });
+
+                modelBuilder.Entity<fblCojFYWorkplanBGTypeFundB> ()
+                .HasKey (a => new { a.fy, a.cojWorkplanTypeId, a.cojBGWorkplanId, a.cojBudgetTypeId });
+
             modelBuilder.Entity<fblCojFYCojStg> ()
                 .HasKey (a => new { a.fy, a.cojStgId });
             modelBuilder.Entity<fblCojFYCojStgWorkplanType> ()
@@ -299,8 +315,7 @@ namespace cojApi.Models {
                 .HasKey (a => new { a.fy, a.cojFund, a.cojWorkplanTypeId, a.cojBGWorkplanId, a.cojWorkActivityId, a.cojBudgetType });
 
             modelBuilder.Entity<cojReserveAllotSummary> ()
-                .HasKey (a => new { a.fy, a.cojFund});
-
+                .HasKey (a => new { a.fy, a.cojFund });
 
             //sp
             modelBuilder.Entity<spCojFYWorkplan> ()
@@ -351,9 +366,15 @@ namespace cojApi.Models {
 
             modelBuilder.Query<vwCojRegionReserveFYAgency> ().ToView ("vw_cojRegionReserveFYAgency");
             modelBuilder.Query<vwCojRegionReserveFYWork> ().ToView ("vw_cojRegionReserveFYWork");
-            modelBuilder.Query<vwCojRegionReserveFYWorkActivity> ().ToView ("vw_cojRegionReserveFYWorkActivity");            
+            modelBuilder.Query<vwCojRegionReserveFYWorkActivity> ().ToView ("vw_cojRegionReserveFYWorkActivity");
             modelBuilder.Query<vwCojRegionReserveFYWorkActivityBudgetType> ().ToView ("vw_cojRegionReserveFYWorkActivityBudgetType");
 
+            //อนุมัติเม็ดเงิน : งาน/กิจกรรม/งบรายจ่าย/รายการอนุมัติเม็ดเงิน
+
+            modelBuilder.Query<vwCojFYAllotWorkplan> ().ToView ("vw_cojFYAllotWorkplan");
+            modelBuilder.Query<vwCojFYAllotWorkplanActivity> ().ToView ("vw_cojFYAllotWorkplanActivity");
+            modelBuilder.Query<vwCojFYAllotWorkplanActivityBudgetType> ().ToView ("vw_cojFYAllotWorkplanActivityBudgetType");
+            modelBuilder.Query<vwCojFYAllotWorkplanActivityBudgetTypeAllot> ().ToView ("vw_cojFYAllotWorkplanActivityBudgetTypeAllot");
 
             // modelBuilder.Query<vwCojBGTransferRequestAgency> ().ToView ("vw_cojBGTransferRequestAgencys");
 
