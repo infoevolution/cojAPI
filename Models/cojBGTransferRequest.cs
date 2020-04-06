@@ -134,7 +134,7 @@ namespace cojApi.Models {
         public double transferB { get; set; }
         public double transferC { get; set; }
         public double transferAMT { get; set; }
-        //public long cojBGPlanAllotId { get; set; }
+        public long cojBGPlanAllotId { get; set; }
         public long cojBGTransferId { get; set; }
 
     }
