@@ -66,9 +66,9 @@ namespace cojApi
             //On ievos1
             //var connection = @"Server=172.22.120.242,1434;Database=dbCOJ;User Id=sa;Password=sql!2019;";
             //var connection = @"Server=172.22.120.242,1434;Database=dbCOJ_Demo;User Id=sa;Password=sql!2019;";
-            var connection = @"Server=172.22.120.242,1434;Database=dbCOJ_Test;User Id=sa;Password=sql!2019;";
+            //var connection = @"Server=172.22.120.242,1434;Database=dbCOJ_Test;User Id=sa;Password=sql!2019;";
             
-            //var connection = @"Server=127.0.0.1;Database=dbCOJ_TestDev;User Id=sa;Password=ievolution@2549;";
+            var connection = @"Server=127.0.0.1;Database=dbCOJ_TestDev;User Id=sa;Password=ievolution@2549;";
             //var connection = @"Server=127.0.0.1;Database=dbCOJ_Dev;User Id=sa;Password=ievolution@2549;";
 
             //On Server

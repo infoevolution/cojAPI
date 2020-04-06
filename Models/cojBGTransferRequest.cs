@@ -108,17 +108,15 @@ namespace cojApi.Models {
         [Key, ColumnAttribute (Order = 0)]
         public long itemNo { get; set; }
         public int fy { get; set; }
-        public long cojFund { get; set; }
         public int quater { get; set; }
         [Key, ColumnAttribute (Order = 1)]
         public long cojAgencyId { get; set; }
-        public long cojBGPlanId { get; set; }
+        //public long cojBGPlanId { get; set; }
         public long cojWorkplanTypeId { get; set; }
         public long cojBGWorkplanId { get; set; }
-        public long cojWorkActivityId { get; set; }
-        public string cojFundName { get; set; }
+        //public long cojWorkActivityId { get; set; }
         public string cojBGWorkplanName { get; set; }
-        public string cojBGWorkActivityName { get; set; }
+        //public string cojBGWorkActivityName { get; set; }
         public double cojBGAllotA { get; set; }
         public double cojBGAllotB { get; set; }
         public double cojBGAllotC { get; set; }
@@ -136,7 +134,7 @@ namespace cojApi.Models {
         public double transferB { get; set; }
         public double transferC { get; set; }
         public double transferAMT { get; set; }
-        public long cojBGPlanAllotId { get; set; }
+        //public long cojBGPlanAllotId { get; set; }
         public long cojBGTransferId { get; set; }
 
     }
