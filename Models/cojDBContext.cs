@@ -381,7 +381,7 @@ namespace cojApi.Models {
             modelBuilder.Query<vwCojFYAllotWorkplanActivityBudgetType> ().ToView ("vw_cojFYAllotWorkplanActivityBudgetType");
             modelBuilder.Query<vwCojFYAllotWorkplanActivityBudgetTypeAllot> ().ToView ("vw_cojFYAllotWorkplanActivityBudgetTypeAllot");
 
-            // modelBuilder.Query<vwCojBGTransferRequestAgency> ().ToView ("vw_cojBGTransferRequestAgencys");
+            modelBuilder.Query<vwCojBGTransferRequestAgency> ().ToView ("vw_cojBGTransferRequestAgencys");
 
             modelBuilder.Query<vwCojBGTransferRequestAgencyItem> ().ToView ("vw_cojBGTransferRequestAgencyItems");
             //-------
