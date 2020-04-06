@@ -318,6 +318,23 @@ namespace cojApi.Controllers {
             }
         }
 
+        // POST: api/cojSP/fblCojFYWorkplanActivityItems
+        [Route ("[action]")]
+        [HttpPost]
+        public async Task<ActionResult<IEnumerable<fblCojFYWorkplanActivityItem>>> fblCojFYWorkplanActivityItems (paramCojBGPlanWork p) {
+
+            try {
+                var _ret = await _context.fblCojFYWorkplanActivityItem.FromSql ($"select * from fbl_cojFYWorkplanActivityItem({p.fy})").ToListAsync ();
+
+                if (_ret.Count != 0) {
+                    return _ret;
+                }
+                return NoContent ();
+            } catch (Exception ex) {
+                return BadRequest (ex.Message);
+            }
+        }
+
         // POST: api/cojSP/fblCojFYWorkplanBGTypeFundsB
         [Route ("[action]")]
         [HttpPost]

@@ -112,6 +112,9 @@ namespace cojApi.Models {
         public double itemAllotAMT { get; set; }
         public double itemTransferRequestAMT { get; set; }
         public double itemTransferAMT { get; set; }
+        public string cojBGWorkplanName { get; set; }
+        public string cojWorkActivityName { get; set; }
+        public string cojBudgetTypeName { get; set; }
     }
 
 public class vwCojFYAllotWorkplanActivityBudgetType

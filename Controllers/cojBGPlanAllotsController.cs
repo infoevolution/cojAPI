@@ -164,7 +164,7 @@ namespace cojApi.Controllers {
         public async Task<ActionResult<IEnumerable<vwCojFYAllotWorkplanActivityBudgetTypeAllot>>> FYAllotWorkActivityBudgetTypeAllot (int fy) {
 
             try {
-                var _ret = await _context.vwCojFYAllotWorkplanActivityBudgetTypeAllots.Where(a => a.allotFy==fy).ToListAsync ();
+                var _ret = await _context.vwCojFYAllotWorkplanActivityBudgetTypeAllots.Where(a => a.allotFy==fy).OrderBy(a=>a.cojWorkplanTypeId | a.cojBGWorkplanId | a.cojWorkActivityId | a.cojBudgetType | a.cojBGPlanAllotNO).ToListAsync ();
 
                 if (_ret.Count != 0) {
                     return Ok (_ret);

@@ -234,6 +234,8 @@ namespace cojApi.Models {
 
         public virtual DbSet<fblCojFYWorkplanActivityBGTypeFundB> fblCojFYWorkplanActivityBGTypeFundB { get; set; }
 
+        public virtual DbSet<fblCojFYWorkplanActivityItem> fblCojFYWorkplanActivityItem { get; set; }
+
         public virtual DbSet<fblCojFYWorkplanBGTypeFundB> fblCojFYWorkplanBGTypeFundB { get; set; }
 
         public virtual DbSet<fblCojFYCojStg> fblCojFYCojStg { get; set; }
@@ -283,8 +285,11 @@ namespace cojApi.Models {
             modelBuilder.Entity<fblCojFYWorkplanActivityBGTypeFundB> ()
                 .HasKey (a => new { a.fy, a.cojWorkplanTypeId, a.cojBGWorkplanId, a.cojWorkActivityId, a.cojBudgetTypeId });
 
-                modelBuilder.Entity<fblCojFYWorkplanBGTypeFundB> ()
+            modelBuilder.Entity<fblCojFYWorkplanBGTypeFundB> ()
                 .HasKey (a => new { a.fy, a.cojWorkplanTypeId, a.cojBGWorkplanId, a.cojBudgetTypeId });
+            
+            modelBuilder.Entity<fblCojFYWorkplanActivityItem> ()
+                .HasKey (a => new { a.id});
 
             modelBuilder.Entity<fblCojFYCojStg> ()
                 .HasKey (a => new { a.fy, a.cojStgId });

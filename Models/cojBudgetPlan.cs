@@ -1,3 +1,4 @@
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace cojApi.Models {
@@ -352,6 +353,37 @@ namespace cojApi.Models {
         public string remark { get; set; }
         public string startDate { get; set; }
         public string endDate { get; set; }
+    }
+
+    public class fblCojFYWorkplanActivityItem {
+        [Key, ColumnAttribute (Order = 0)]
+        public long id { get; set; }
+        public long idRef { get; set; }
+        public string code { get; set; }
+        public string name { get; set; }
+        public long cojBGPlanId { get; set; }
+        public long cojWorkplanTypeId { get; set; }
+        public long cojBGWorkplanId { get; set; }
+        public long cojWorkActivityId { get; set; }
+        public long cojWorkActivityItemId { get; set; }
+        public string quantityUnit { get; set; }
+        public string quantityUnitName { get; set; }
+        public string periodStart { get; set; }
+        public string periodEnd { get; set; }
+        public long budgetTypeId { get; set; }
+        public double budgetAmount { get; set; }
+        public string cojAgencys { get; set; }
+        public bool showInSummary { get; set; }
+        public long cojBGWorkplanActivityItemParentId { get; set; }
+        public long cojBGWorkplanActivityItemLevel { get; set; }
+        public string remark { get; set; }
+        public string startDate { get; set; }
+        public string endDate { get; set; }
+        public string procumentAgency { get; set; }
+        public string disbursementAgency { get; set; }
+        public string responsibilityAgency { get; set; }
+        public long cojFund { get; set; }
+        public int fy { get; set; }
     }
 
 }
