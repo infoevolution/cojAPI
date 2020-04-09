@@ -173,6 +173,28 @@ namespace cojApi.Controllers {
 
         }
 
+        // POST: api/v1/cojProjects/validate
+        [Route("[action]")]
+        [HttpPost]
+        public async Task<ActionResult<cojProject>> validate (cojProject newItem) {
+            
+            try
+            {
+                var _cojProject = await _context.cojProjects.Where(x => x.name.ToLower()==newItem.name.ToLower()).ToListAsync();
+
+                if(_cojProject.Count != 0)
+                {
+                    return Ok(_cojProject);
+                } 
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            
+        }
+
         // PUT: api/v1/cojProjects/2
         [HttpPut ("{id}")]
         public async Task<IActionResult> UpdateItem (long id, cojProject item) {

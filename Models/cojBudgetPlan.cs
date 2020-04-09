@@ -20,6 +20,10 @@ namespace cojApi.Models {
         public string startDate { get; set; }
         public string endDate { get; set; }
         public string note { get; set; }
+        public int cojBGPlanType { get; set; }
+        public int cojBGPlanExtraNo { get; set; }
+        public int cojBGPlanAllotNo { get; set; }
+        public string cojBGPlanAllotDate { get; set; }
     }
 
     public class cojBGPlanSum {
