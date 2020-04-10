@@ -148,9 +148,3 @@ E:/work/Project/App/Court/COJ/PV/merce/cojApi_trigger/obj/Debug/netcoreapp2.2/co
 /Users/pv/Documents/GitHub/cojAPI/obj/Debug/netcoreapp2.2/cojApi.RazorTargetAssemblyInfo.cache
 /Users/pv/Documents/GitHub/cojAPI/obj/Debug/netcoreapp2.2/cojApi.dll
 /Users/pv/Documents/GitHub/cojAPI/obj/Debug/netcoreapp2.2/cojApi.pdb
-/Users/pv/Documents/GitHub/cojAPI/bin/Debug/netcoreapp2.2/cojApiTest/web.config
-/Users/pv/Documents/GitHub/cojAPI/bin/Debug/netcoreapp2.2/cojApiTest/appsettings.Development.json
-/Users/pv/Documents/GitHub/cojAPI/bin/Debug/netcoreapp2.2/cojApiTest/appsettings.json
-/Users/pv/Documents/GitHub/cojAPI/bin/Debug/netcoreapp2.2/cojApiTest/cojApi.deps.json
-/Users/pv/Documents/GitHub/cojAPI/bin/Debug/netcoreapp2.2/cojApiTest/cojApi.runtimeconfig.json
-/Users/pv/Documents/GitHub/cojAPI/bin/Debug/netcoreapp2.2/cojApiTest/package-lock.json

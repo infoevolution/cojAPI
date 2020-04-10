@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  cojapi:
+    image: cojapi
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 5110
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:5110
+    volumes:
+      - ~/.vsdbg:/remote_debugger:rw
